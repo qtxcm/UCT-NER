@@ -1,0 +1,25 @@
+data:
+  data_dir: ./dev/data/
+  train_files: en-train.bio
+  dev_file: de-dev.bio
+  test_file: de-test.bio
+model:
+  name: pg
+  word_embedding:
+    name_or_path: /home/user/corpus/pretrain/bert/multi-bert/
+optim:
+  lr: 0.00001
+  name: Adam
+trainer:
+  batch_size: 8
+  early_stop: true
+  epoch_num: 10
+  epoch_start: 0
+  save_after: 0
+  save_dir: ./dev/model/
+  save_strategy: best
+  pre_train_path: ./dev/model/ada_10_best.pth
+  test_every: 1
+vocab:
+  min_count:
+    words: 1
