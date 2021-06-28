@@ -1,2 +1,4 @@
-# UCT-NER
-Unsupervised Corss-lingual model transfer for named entity recognition with contextualized word representations
+# Unsupervised Cross-Lingual Model Transfer for Named Entity Recognition with Contextualized Word Representations
+
+#Command 
+python main.py --yaml  "config.file"  > "out.file"
